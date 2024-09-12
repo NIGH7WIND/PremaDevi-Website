@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prema Devi Foundation Limited</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js" defer></script>
+    <script src="scripts.js" defer></script>
+    <header>
+        <nav class="container">
+            <div class="logo">
+              <img src="images/logo-placeholder-2.png" alt="Prema Devi Foundation Logo">
+              <span>Prema Devi Foundation</span>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#children">Children</a></li>
+              <li><a href="#farmers">Farmers</a></li>
+              <!-- <li><a href="#blog-section">Events</a></li> -->
+              <li><a href="#volunteers" class="donate-button">Join Us</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Empowering Communities, Transforming Lives</h1>
+            <p>Prema Devi Foundation Limited is committed to improving the lives of underprivileged children and supporting farmers through sustainable initiatives.</p>
+            <a href="https://forms.gle/s6QiyL6bnPSdCXfk9" target="_blank" class="donate-button">Donate Now</a>
+            <a href="#volunteers"  class="donate-button">Join Us</a>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>At Prema Devi Foundation, we are dedicated to creating positive change in our communities. Our mission is to empower underprivileged children through education and healthcare, while also supporting farmers to achieve sustainable livelihoods. We believe in the power of collective action to transform lives and build a brighter future for all.</p>
+        </div>
+    </section>
+
+    <section id="children">
+        <div class="container">
+            <h2>Underprivileged Children Health and Education</h2>
+            <div class="section-content">
+                <div class="section-text">
+                    <p>Our mission is to provide quality healthcare and education to underprivileged children, ensuring they have the opportunity to thrive and reach their full potential. Through our initiatives, we aim to break the cycle of poverty and create a brighter future for generations to come.</p>
+                </div>
+                <div class="section-image">
+                    <img src="images/childrenEdu.jpg" alt="Children learning in a classroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics children-stats">
+        <div class="container">
+            <div class="stat-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="children-impacted">0</div>
+                    <div class="stat-label">Children Impacted</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="food-distributed">0</div>
+                    <div class="stat-label">Food Distributed (kgs)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="stationary-distributed">0</div>
+                    <div class="stat-label">Stationary Distributed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="children-protected">0</div>
+                    <div class="stat-label">Children Protected from Dropping out</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="health-camps-conducted">0</div>
+                    <div class="stat-label">Health Camps Conducted</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="farmers">
+        <div class="container">
+            <h2>Farmers and FPOs Aid</h2>
+            <div class="section-content">
+                <div class="section-image">
+                    <img src="images/farmer.jpg" alt="Farmer working in a field">
+                </div>
+                <div class="section-text">
+                    <p>We support farmers and Farmer Producer Organizations (FPOs) by leveraging technology (Data / AI /ML models), providing essential inputs such as seeds and fertilizers as well as necessary supply chain for delivery of farmer's produce to the customers at better prices. Our goal is to empower rural communities, enhance agricultural productivity, and promote sustainable farming practices that benefit both farmers and the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics farmers-stats">
+        <div class="container">
+            <div class="stat-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="farmers-impacted">0</div>
+                    <div class="stat-label">Farmers / FPO Impacted</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="yield-improvement">0</div>
+                    <div class="stat-label">Yield Improvement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="cost-reduction">0</div>
+                    <div class="stat-label">Cost Reduction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section id="blog-section">
+        <div class="container">
+            <div class="blog-section">
+                <h2>Upcoming Events</h2>
+                <div class="blog-grid">
+                  <article class="blog-post">
+                    <img src="https://wsisme.com/wp-content/uploads/2015/07/iStock_000031725970_Large.jpg" alt="Blog post image">
+                    <div class="blog-content">
+                      <h3>The Future of Web Design</h3>
+                      <p class="blog-excerpt">Exploring upcoming trends and technologies shaping the web...</p>
+                      <div class="blog-date">May 15, 2024</div>
+                      <div class="blog-full-content">
+                        <p>The world of web design is constantly evolving, driven by technological advancements and changing user expectations. In this post, we explore the cutting-edge trends that are set to define the future of web design.</p>
+                        <p>From AI-driven personalization to immersive 3D experiences, we'll delve into the technologies that are pushing the boundaries of what's possible on the web. We'll also discuss the growing importance of accessibility and how it's shaping design decisions.</p>
+                        <p>Stay ahead of the curve and learn how these emerging trends can be applied to create more engaging, efficient, and user-friendly websites.</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="blog-post">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a1f9f22692ebeaff6283c46/1550766413101-SARRK9N670RLBO9JYY2L/blogs-to-improve-inbound-marketing-woman-entrepreneur" alt="Blog post image">
+                    <div class="blog-content">
+                      <h3>Optimizing Website Performance</h3>
+                      <p class="blog-excerpt">Key strategies to improve your website's speed and efficiency...</p>
+                      <div class="blog-date">May 10, 2024</div>
+                      <div class="blog-full-content">
+                        <p>In today's fast-paced digital world, website performance can make or break user experience. This post dives into effective strategies for optimizing your website's speed and efficiency.</p>
+                        <p>We'll cover crucial topics such as minimizing HTTP requests, leveraging browser caching, optimizing images, and implementing content delivery networks (CDNs). You'll also learn about the latest performance metrics and how to measure them.</p>
+                        <p>By the end of this article, you'll have a comprehensive toolkit for enhancing your website's performance, ensuring faster load times and improved user satisfaction.</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="blog-post">
+                    <img src="https://www.kexworks.com/wp-content/uploads/2016/10/blog-post2.jpg" alt="Blog post image">
+                    <div class="blog-content">
+                      <h3>Accessibility in Modern Websites</h3>
+                      <p class="blog-excerpt">Ensuring your website is usable for everyone...</p>
+                      <div class="blog-date">May 5, 2024</div>
+                      <div class="blog-full-content">
+                        <p>Web accessibility is not just a nice-to-have feature; it's a necessity in our increasingly digital world. This post explores the importance of making websites accessible to all users, regardless of their abilities or disabilities.</p>
+                        <p>We'll discuss key principles of web accessibility, including keyboard navigation, proper use of ARIA attributes, and creating content that works well with screen readers. You'll also learn about the legal implications of accessibility and how it can benefit your SEO efforts.</p>
+                        <p>Discover how to create an inclusive web experience that not only complies with accessibility standards but also improves usability for all your visitors.</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="blog-post">
+                    <img src="https://www.hallaminternet.com/wp-content/uploads/2020/01/Is-blogging-relevant-anymore.jpeg" alt="Blog post image">
+                    <div class="blog-content">
+                      <h3>The Rise of Progressive Web Apps</h3>
+                      <p class="blog-excerpt">Exploring the benefits and implementation of PWAs...</p>
+                      <div class="blog-date">April 28, 2024</div>
+                      <div class="blog-full-content">
+                        <p>Progressive Web Apps (PWAs) are revolutionizing the way we think about web applications. This post delves into what makes PWAs special and why they're gaining traction among developers and businesses alike.</p>
+                        <p>We'll explore the key features of PWAs, including offline functionality, push notifications, and app-like interfaces. You'll learn about the technologies behind PWAs, such as service workers and web app manifests, and how to implement them in your projects.</p>
+                        <p>Discover how PWAs can improve user engagement, increase conversion rates, and provide a seamless experience across devices. Whether you're a developer or a business owner, this post will help you understand the potential of PWAs in today's digital landscape.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="blog-section-2">
+        <div class="container">
+            <div class="blog-section">
+                <h2>Past Events</h2>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <img src="https://techmeetups.com/wp-content/uploads/2019/06/blogging-SMB.png" alt="Blog post image">
+                        <div class="blog-content">
+                          <h3>Designing for Emotional Engagement</h3>
+                          <p class="blog-excerpt">Crafting experiences that resonate with users...</p>
+                          <div class="blog-date">May 20, 2024</div>
+                          <div class="blog-full-content">
+                            <p>Emotional engagement is a crucial aspect of user experience. This post explores the psychology behind emotional design and provides practical tips for creating experiences that resonate with users.</p>
+                            <p>We'll discuss the role of storytelling, color theory, and typography in evoking emotions. You'll learn how to use user research to identify emotional pain points and design solutions that address them.</p>
+                            <p>Discover how to create an emotional connection with your users and build a loyal following for your brand.</p>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="blog-post">
+                        <img src="https://www.th3design.co.uk/wp-content/uploads/2019/09/shutterstock_1141387385-edit.jpg" alt="Blog post image">
+                        <div class="blog-content">
+                          <h3>UX Design Trends for 2025</h3>
+                          <p class="blog-excerpt">Exploring the latest innovations in user experience design...</p>
+                          <div class="blog-date">June 1, 2024</div>
+                          <div class="blog-full-content">
+                            <p>The world of UX design is constantly evolving, and 2025 is shaping up to be an exciting year. This post delves into the latest trends and innovations in user experience design, from AI-powered interfaces to sustainable design practices.</p>
+                            <p>We'll explore the role of voice UI, augmented reality, and micro-interactions in enhancing user experience. You'll also learn about the importance of accessibility and how to design for inclusivity.</p>
+                            <p>Stay ahead of the curve and discover the UX design trends that will shape the future of digital products.</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="blog-post">
+                        <img src="https://wallpaperaccess.com/full/1947431.jpg" alt="Blog post image">
+                        <div class="blog-content">
+                          <h3>Building a Design System for Your Website</h3>
+                          <p class="blog-excerpt">Creating a unified design language for your digital products...</p>
+                          <div class="blog-date">June 8, 2024</div>
+                          <div class="blog-full-content">
+                            <p>A design system is a crucial component of any digital product, providing a unified design language and streamlining development. This post guides you through the process of building a design system for your website, from defining your design principles to creating a living style guide.</p>
+                            <p>We'll cover the benefits of design systems, including improved consistency, reduced design debt, and enhanced collaboration between designers and developers.</p>
+                            <p>Learn how to create a design system that scales with your business and enhances your user experience.</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="blog-post">
+                        <img src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg" alt="Blog post image">
+                        <div class="blog-content">
+                          <h3>Web Development Trends to Watch in 2025</h3>
+                          <p class="blog-excerpt">Staying ahead of the curve with the latest web development trends...</p>
+                          <div class="blog-date">June 15, 2024</div>
+                          <div class="blog-full-content">
+                            <p>The web development landscape is constantly evolving, and 2025 promises to be an exciting year. This post explores the latest trends and innovations in web development, from PWA's to serverless architecture.</p>
+                            <p>We'll delve into the world of JavaScript frameworks, exploring the latest developments in React, Angular, and Vue.js. You'll also learn about the importance of web performance optimization and how to improve your website's speed and efficiency.</p>
+                            <p>Stay ahead of the curve and discover the web development trends that will shape the future of the web.</p>
+                          </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <section id="volunteers">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Volunteer with Us</h2>
+                    <p>Join our mission to empower underprivileged children and support farmers. Fill out the form below to express your interest in volunteering with us.</p>
+                    <form id="volunteer-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="contact">Contact No:</label>
+                        <input type="tel" id="contact" name="contact" required>
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required>
+
+                        <label for="experience">Past Experience:</label>
+                        <textarea id="experience" name="experience"></textarea>
+
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="section-image">
+                    <img src="images/form-bg.png" alt="Volunteer Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="thank-you-popup" class="popup">
+        <div class="popup-content">
+          <h2><b>Thank You for Your Interest!</b></h2>
+          <p><b>We have received your details and appreciate your enthusiasm to volunteer with us.</b></p>
+          <p>Our team will review your submission and reach out to you soon with more information on how you can get involved.</p>
+          <p><b>Together, we can make a difference!</b></p>
+          <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <!-- Add the Contact Us section at the bottom of the page -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us:</p>
+            <ul>
+                <li>
+                    <a href="mailto:info@premadevi.org">
+                        <i class="fas fa-envelope"></i>
+                        info@premadevi.org
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    +91 9278340646
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Prema Devi Foundation Limited. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
