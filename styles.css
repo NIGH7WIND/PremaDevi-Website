@@ -482,7 +482,7 @@ footer {
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 35px;
+    top: 30px;
     right: 20px;
     z-index: 1;
     transition: all 0.3s ease;
@@ -521,7 +521,7 @@ footer {
     }
 
     .logo span {
-        display: none;
+        font-size: large;
     }
 }
 
