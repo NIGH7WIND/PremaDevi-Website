@@ -7,6 +7,29 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+function injectSchemaMarkup() {
+    var schemaData = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Prema Devi Foundation Limited",
+        "url": "https://premadevi.org",
+        "logo": "https://premadevi.org/images/logo-placeholder-2.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@premadevi.org",
+            "telephone": "+91 9278340646",
+            "contactType": "Customer Service"
+        }
+    };
+
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+}
+
+document.addEventListener('DOMContentLoaded', injectSchemaMarkup);
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
